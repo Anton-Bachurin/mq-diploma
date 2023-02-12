@@ -118,7 +118,6 @@
 
 .trends-items {
   display: flex;
-  min-height: 315px;
   justify-content: space-between; 
 }
 
@@ -173,15 +172,22 @@
 
 .trend-text {
   border: solid 3px #917941;
+  margin-top: 30%;
   margin-left: 6%;
   margin-right: 6%;
   margin-bottom: 4%;
-  padding: 38px 34px 30px;
+  padding: 35px;
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .trend-title-link {
   text-decoration: none;
   color: #ffffff;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 .trend-title-link:hover {
@@ -488,28 +494,49 @@
 .ware-text {
   border: solid 3px #d3c59d;
   flex-grow: 1;
-  margin-top: -30px;
-  padding: 50px 25px;
+  margin-top: -38px;
+  padding: 50px 25px 28px;
 }
 
 .ware-title {
   text-transform: uppercase;
+  font-size: 20px;
 }
 
-.quotes::before {
-  content: open-quote;
-}
-.quotes::after {
-  content: close-quote;
+.description {
+  font-size: 15px;
+  line-height: 22px;
 }
 
-.quotes {
-  quotes: '«' '»';
+.ware-des-link {
+  color: #b59f5b;
+  text-decoration: none;
+}
+
+.ware-des-link:hover {
+  text-decoration: underline;
 }
 
 .purchase {
   display: flex;
   justify-content: space-between;
+  margin-top: 25px;
+}
+
+.price {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.old-price {
+  font-size: 14px;
+  text-decoration: line-through;
+}
+
+.new-price {
+  font-size:  20px;
 }
 
 .ware-link {
@@ -519,8 +546,12 @@
   border: none;
   background-color: #b59f5b;
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 14px;
   font-weight: bold;
+}
+
+.ware-link:hover {
+  background-color: #323232;
 }
 
 .footer-navigation {
