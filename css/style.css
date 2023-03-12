@@ -79,6 +79,10 @@
   text-decoration: underline;
 }
 
+.mobile-logo {
+  display: none;
+}
+
 .blog-title {
   position: relative;
   text-align: center;
@@ -741,6 +745,10 @@
 }
 
 @media (min-width: 641px) and (max-width: 1199px) {
+  .blog {
+  background-image: url("../images/banner-bg-tablet.jpg");
+  }
+
   .navigation {
     display: none;
   }
@@ -846,8 +854,73 @@
   .ware-item:nth-of-type(-n+2) {
     margin-bottom: 3%;
   }
+}
+
+@media (max-width: 640px) {
+  .blog {
+  background-image: url("../images/banner-mobile.jpg");
+  }
+
+  .blog-text {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 26px;
+  padding-bottom: 215px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .blog-head {
+    justify-content: end;
+  }
+
+  .menu-btn {
+    width: 24px;
+    height: 24px;
+    display: block;
+    background-image: url("../svg/menu-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 24px;
+    margin-bottom: 175px;
+  }
+
+  .mobile-logo {
+    display: block;
+    width: 267px;
+    margin: 0 auto;
+  }
+
+  .content-title {
+    width: 620px;
+    max-width: 95%;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 36px;
+  }
   
+  .big-title {
+  font-size: 16px;
+  padding-top: 44px;
+  padding-bottom: 40px;
+  }
 
+  .big-title::after {
+  width: 90px;
+  padding-top: 13px;
+  }
+  
+  .trends-items {
+    flex-wrap: wrap;
+  }
 
-
+  .trend-item {
+    width: 100%;
+  }
 }
