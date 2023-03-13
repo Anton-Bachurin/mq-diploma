@@ -859,6 +859,7 @@
 @media (max-width: 640px) {
   .blog {
   background-image: url("../images/banner-mobile.jpg");
+  height: 100vh;
   }
 
   .blog-text {
@@ -917,10 +918,73 @@
   }
   
   .trends-items {
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 3px;
   }
 
   .trend-item {
     width: 100%;
   }
+
+  .all-content {
+    display: block;
+    width: 92%;
+    padding-top: 44px;
+  }
+
+  .posts {
+    width: 92%;
+    /*margin: 0 auto;*/
+  }
+
+  .post {
+  display: block;
+  }
+
+  .post-image {
+    margin-bottom: 15px;
+  }
+
+  .post-date {
+    margin-bottom: 20px;
+  }
+
+  .add-info {
+    /*width: 92%;*/
+    margin: 0 auto;
+  }
+
+  .aside-new-posts {
+    margin-bottom: 48px;
+  }
+
+
+
+  /*.all-content {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding-top: 64px;
+  justify-content: space-between;
+}
+
+.posts {
+  display: flex;
+  width: 65%;
+}
+
+.news {
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+}
+
+.post {
+  display: flex;
+  gap: 30px;
+}
+
+.post-image {
+  width: 381px;
+}*/
 }
