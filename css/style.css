@@ -927,64 +927,33 @@
   }
 
   .all-content {
-    display: block;
-    width: 92%;
     padding-top: 44px;
-  }
-
-  .posts {
+    flex-direction: column;
+    align-items: center;
     width: 92%;
-    /*margin: 0 auto;*/
   }
 
   .post {
-  display: block;
-  }
-
-  .post-image {
-    margin-bottom: 15px;
+    flex-direction: column;
+    gap: 16px;
   }
 
   .post-date {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
   }
 
   .add-info {
-    /*width: 92%;*/
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
   }
 
-  .aside-new-posts {
-    margin-bottom: 48px;
+  .ware-items {
+    flex-direction: column;
+    gap: 25px;
   }
 
+  .ware-item {
+    width: auto;
+  }
 
-
-  /*.all-content {
-  display: flex;
-  margin: 0 auto;
-  max-width: 1200px;
-  padding-top: 64px;
-  justify-content: space-between;
-}
-
-.posts {
-  display: flex;
-  width: 65%;
-}
-
-.news {
-  display: flex;
-  flex-direction: column;
-  gap: 55px;
-}
-
-.post {
-  display: flex;
-  gap: 30px;
-}
-
-.post-image {
-  width: 381px;
-}*/
 }
